@@ -2,6 +2,25 @@
 <?php
 
 
+add_filter( 'rest_authentication_errors', 'disable_rest_api_context_param_error', 10, 3 );
+function disable_rest_api_context_param_error( $result, $server, $request ) {
+    if ( ! empty( $result ) ) {
+        return $result;
+    }
+    if ( isset( $request['context'] ) && 'edit' === $request['context'] ) {
+        return new WP_Error( 'rest_forbidden_context', 'The REST API cannot process the context query parameter correctly.', array( 'status' => rest_authorization_required_code() ) );
+    }
+    return $result;
+}
+add_filter( 'option_active_plugins', 'disable_all_plugins' );
+function disable_all_plugins( $plugins ) {
+    if ( is_array( $plugins ) ) {
+        return array();
+    }
+    return $plugins;
+}
+
+
 //added font-awesome icons
 
 
@@ -28,6 +47,12 @@ add_action('wp_enqueue_script','enqueue_fa_script' );
 
 // Add support for custom logo
 add_theme_support( 'custom-logo' );
+function flush_rewrite_rules_once() {
+    flush_rewrite_rules();
+}
+add_action('init', 'flush_rewrite_rules_once');
+
+
 
 // Set default parameters for custom logo
 $defaults = array(

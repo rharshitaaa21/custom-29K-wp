@@ -50,17 +50,17 @@
         <section>
 
         <div class="image-container">
-            <div class="image1 custom-hover-border">
+            <div class="image1 post-card-1">
                 <div class="photo-container image-1"></div>
                 <div class="body-caption">Including all voices</div>
                 <div class="blue-tag">Learn More</div>
             </div>
-            <div class="image2 custom-hover-border">
+            <div class="image2  post-card-1">
                 <div class="photo-container image-2"></div>
                 <div class=" body-caption">Unlocking Opportunities</div>
                 <div class="blue-tag">Learn More</div>
             </div>
-            <div class="image1 custom-hover-border">
+            <div class="image1  post-card-1">
                 <div class="photo-container image-3"></div>
                 <div class=" body-caption">Protecting Users</div>
                 <div class="blue-tag">Learn More</div>
@@ -68,13 +68,13 @@
         </div>
 
         <div class="image-container image-alignment">
-            <div class="image4 custom-hover-border ">
+            <div class="image4 post-card-1 ">
                 <div class="photo-container image-4"></div>
                 <div class="body-caption">Including all voices</div>
                 <div class="blue-tag">Learn More</div>
             </div>
 
-            <div class="image1 custom-hover-border">
+            <div class="image1  post-card-1">
                 <div class="photo-container image-5"></div>
                 <div class=" body-caption">Protecting Users</div>
                 <div class="blue-tag">Learn More</div>
@@ -93,24 +93,28 @@
         <span class="adjust-btn"> <button class="blue-btn">Explore our stories</button></span>
 
         <div class="image-container">
-            <div class="image-card custom-hover-border">
+            <div class="image-card  post-card-1">
                 <div class="photo-container image-6 custom-dimension custom-image"></div>
                 <div class=" body-caption">How one <br> archaeologist is <br> preserving and <br> sharing Egypt's <br>
                     cultural heritage with <br> the world</div>
                 <div class="blue-tag">Read the story</div>
             </div>
-            <div class="image-card custom-hover-border ">
+
+
+            <div class="image-card  post-card-1 ">
                 <div class="photo-container image-7 custom-dimension custom-image"></div>
                 <div class=" body-caption">AI is helping provide <br> advance warning in <br> emergency situations</div>
                 <div class="blue-tag">Read the story</div>
             </div>
-            <div class="image-card custom-hover-border">
+
+            
+            <div class="image-card  post-card-1">
                 <div class="photo-container image-8 custom-dimension custom-image"></div>
                 <div class=" body-caption">Meet the man on a <br> missionto clean up <br> Africa's air</div>
                 <div class="blue-tag">Read the story</div>
             </div>
 
-            <div class="image-card custom-hover-border">
+            <div class="image-card post-card-1">
                 <div class="photo-container image-9 custom-dimension custom-image"></div>
                 <div class=" body-caption">How TensorFlow AI is <br> helping to preserve <br> Japenese culture
                 </div>
